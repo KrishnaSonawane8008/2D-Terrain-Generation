@@ -1,0 +1,58 @@
+[gd_scene load_steps=12 format=3 uid="uid://b3p0yotx1qc1i"]
+
+[ext_resource type="Texture2D" uid="uid://dldyyojal0ocj" path="res://Cracked dirt.png" id="1_mpnim"]
+[ext_resource type="Script" path="res://WorldGen.gd" id="2_5ppmw"]
+[ext_resource type="Texture2D" uid="uid://y3i1meme7vxa" path="res://Terrain_tiles.png" id="2_5r1td"]
+[ext_resource type="Texture2D" uid="uid://8utpomaei137" path="res://Tree.png" id="3_5mtle"]
+[ext_resource type="Script" path="res://CameraZoom.gd" id="4_e84e7"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oyrbm"]
+texture = ExtResource("1_mpnim")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xg1mq"]
+texture = ExtResource("2_5r1td")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pkm0b"]
+texture = ExtResource("3_5mtle")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_hclap"]
+sources/0 = SubResource("TileSetAtlasSource_oyrbm")
+sources/1 = SubResource("TileSetAtlasSource_xg1mq")
+sources/7 = SubResource("TileSetAtlasSource_pkm0b")
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_wno5j"]
+frequency = 0.0841
+fractal_octaves = 4
+fractal_lacunarity = 1.0
+fractal_gain = 0.7
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_jajf1"]
+width = 300
+height = 300
+noise = SubResource("FastNoiseLite_wno5j")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+scale = Vector2(0.2, 0.2)
+tile_set = SubResource("TileSet_hclap")
+format = 2
+script = ExtResource("2_5ppmw")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 324)
+zoom = Vector2(0.5, 0.5)
+script = ExtResource("4_e84e7")
+
+[node name="noisetexture" type="Sprite2D" parent="."]
+visible = false
+texture = SubResource("NoiseTexture2D_jajf1")
