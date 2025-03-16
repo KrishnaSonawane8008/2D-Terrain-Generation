@@ -18,4 +18,4 @@ The "layer" variable works as a fag for switching the texture of each tile, henc
 </video> -->
 <!-- ![TestRun](/ProjectOutput/TestRun.mp4) -->
 <!-- <video src='/ProjectOutput/TestRun.mp4' width=180 /> -->
-<img src="/ProjectOutput/TestRun.mp4">
+<vid src="/ProjectOutput/TestRun.mp4">
