@@ -9,4 +9,4 @@ The "layer" variable works as a fag for switching the texture of each tile, henc
 <br>
 <br>
 <h1>Final Output</h1>
-![Alt text](ProjectOutput/TerainFull.png)
+![Alt text](LikeTerraria/ProjectOutput/TerainFull.png)
