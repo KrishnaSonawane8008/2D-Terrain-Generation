@@ -8,3 +8,5 @@ The project uses the FastNoiseLite class to generate noise, which is then sample
 The "layer" variable works as a fag for switching the texture of each tile, hence the tile type changes when we go down the ground layer. Features such as Mountains, plaines or small pockets of space can be created based on the horizontal coordinate(which represents height). The generated terrain is simply the result of sampling two noise functions and using them to create tiles with the method described above.
 <br>
 <br>
+<h1>Final Output</h1>
+![Alt text](ProjectOutput/TerainFull.png)
