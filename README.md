@@ -12,4 +12,7 @@ The "layer" variable works as a fag for switching the texture of each tile, henc
 <img src="/ProjectOutput/TerainFull.png">
 <img src="/ProjectOutput/TerrainMountainCloseup.png">
 <img src="/ProjectOutput/TerrainCloseup.png">
-<video src="/ProjectOutput/TestRun.mp4>
+<video src="/ProjectOutput/TestRun.mp4" >
+<!-- <video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+</video> -->
