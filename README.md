@@ -9,4 +9,4 @@ The "layer" variable works as a fag for switching the texture of each tile, henc
 <br>
 <br>
 <h1>Final Output</h1>
-![Screenshot of full generated terrain](TerainFull.png)
+![Screenshot of full generated terrain](/TerainFull.png)
