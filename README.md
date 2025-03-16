@@ -9,6 +9,7 @@ The "layer" variable works as a fag for switching the texture of each tile, henc
 <br>
 <br>
 <h1>Final Output</h1>
-<img src="/TerainFull.png">
- 
+<img src="/ProjectOutput/TerainFull.png">
+<img src="/ProjectOutput/TerrainMountainCloseup.png">
+<img src="/ProjectOutput/TerrainCloseup.png">
 
